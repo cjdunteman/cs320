@@ -1,0 +1,128 @@
+{
+  "score": 42.0,
+  "tests": [
+    {
+      "test": "has_classes",
+      "points": 8,
+      "possible": 8
+    },
+    {
+      "test": "service_ids",
+      "points": 20,
+      "possible": 20
+    },
+    {
+      "test": "get_trips",
+      "points": 4,
+      "possible": 8,
+      "log": [
+        "========================================",
+        "TEST get_trips (8)",
+        "unexpected repr results in first 5 get_trips results on 2020-02-21 00:00:00: expected ['Trip(904927, 1, True)', 'Trip(904928, 1, True)', 'Trip(904929, 1, True)', 'Trip(904930, 1, True)', 'Trip(904931, 1, True)'] but found ['Trip(904927, 1, 1)', 'Trip(904928, 1, 1)', 'Trip(904929, 1, 1)', 'Trip(904930, 1, 1)', 'Trip(904931, 1, 1)']",
+        "unexpected repr results in first 5 get_trips results on 2020-02-22 00:00:00: expected ['Trip(905039, 2, True)', 'Trip(905040, 2, True)', 'Trip(905041, 2, True)', 'Trip(905042, 2, True)', 'Trip(905043, 2, True)'] but found ['Trip(905039, 2, 1)', 'Trip(905040, 2, 1)', 'Trip(905041, 2, 1)', 'Trip(905042, 2, 1)', 'Trip(905043, 2, 1)']",
+        ""
+      ]
+    },
+    {
+      "test": "get_trips_by_route",
+      "points": 10,
+      "possible": 10
+    },
+    {
+      "test": "get_stops",
+      "points": 0,
+      "possible": 8,
+      "log": [
+        "========================================",
+        "TEST get_stops (8)",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 94, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 212, in get_stops",
+        "    err = is_expected(actual=len(stops), name=\"get_stops:len:%d\"%i)",
+        "TypeError: object of type 'NoneType' has no len()",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "get_stops_rect",
+      "points": 0,
+      "possible": 10,
+      "log": [
+        "========================================",
+        "TEST get_stops_rect (10)",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 94, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 241, in get_stops_rect",
+        "    stops = bd.get_stops_rect((x1, x2), (y1, y2))",
+        "TypeError: get_stops_rect() takes 0 positional arguments but 3 were given",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "get_stops_circ",
+      "points": 0,
+      "possible": 10,
+      "log": [
+        "========================================",
+        "TEST get_stops_circ (10)",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 94, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 263, in get_stops_circ",
+        "    stops = bd.get_stops_circ((x, y), radius)",
+        "  File \"/home/cjdunteman/cs320/p2/bus.py\", line 119, in get_stops_circ",
+        "    x = ((x - radius), (x + radius))",
+        "TypeError: unsupported operand type(s) for -: 'tuple' and 'float'",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "scatter_stops",
+      "points": 0,
+      "possible": 20,
+      "log": [
+        "========================================",
+        "TEST scatter_stops (20)",
+        "distribution of scatter points all-x not correct: expected 2101 points but found 0 points",
+        "distribution of scatter points all-y not correct: expected 2101 points but found 0 points",
+        "distribution of scatter points red-x not correct: expected 1542 points but found 0 points",
+        "distribution of scatter points red-y not correct: expected 1542 points but found 0 points",
+        "distribution of scatter points gray-x not correct: expected 559 points but found 0 points",
+        "distribution of scatter points gray-y not correct: expected 559 points but found 0 points",
+        "distribution of scatter points all-x not correct: expected 1403 points but found 0 points",
+        "distribution of scatter points all-y not correct: expected 1403 points but found 0 points",
+        "distribution of scatter points red-x not correct: expected 1164 points but found 0 points",
+        "distribution of scatter points red-y not correct: expected 1164 points but found 0 points",
+        "distribution of scatter points gray-x not correct: expected 239 points but found 0 points",
+        "distribution of scatter points gray-y not correct: expected 239 points but found 0 points",
+        ""
+      ]
+    },
+    {
+      "test": "draw_tree",
+      "points": 0,
+      "possible": 6,
+      "log": [
+        "========================================",
+        "TEST draw_tree (6)",
+        "no lines detected; did you plot like this?",
+        "ax.plot((x, x), (y1, y2), ...)",
+        "horizontal lines not correctly placed: expected 42 points but found 0 points",
+        "vertical lines not correctly placed: expected 21 points but found 0 points",
+        "no lines detected; did you plot like this?",
+        "ax.plot((x, x), (y1, y2), ...)",
+        "horizontal lines not correctly placed: expected 42 points but found 0 points",
+        "vertical lines not correctly placed: expected 21 points but found 0 points",
+        ""
+      ]
+    }
+  ],
+  "lint": [],
+  "date": "03/01/2020",
+  "latency": 0.4948270320892334
+}
