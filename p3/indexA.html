@@ -1,0 +1,33 @@
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		function subscribe() {
+       		 	var email = prompt("What is your email?", "????");
+       	 		$.post({
+          			type: "POST",
+          			url: "email",
+          			data: email,
+          			contentType: "application/text; charset=utf-8",
+          			dataType: "json"
+        		}).done(function(data) {
+          			alert(data);
+        		}).fail(function(data) {
+          			alert("POST failed");
+        		});
+      		}	
+    	</script>
+ </head>
+<body>
+	<h1>Welcome!</h1>
+	<p> Enjoy the data.</p>
+	<a href="http://35.238.195.196:5000/browse.html">Browse</a>
+	<a href="http://35.238.195.196:5000/api.html">API</a>
+	<p>Donate now, or Betty White will get the coronavirus!</p>
+	<img src ={{url_for(‘static’, filename=betty-white.jpg)}} alt="Betty White" height="42" width="42">
+	<a onclick href="http://35.238.195.196:5000/donate.html?from=A">Donate</a>
+	<br>
+	<br>
+	<button onclick="whatever()">Subscribe</button>
+</body>
+<html>

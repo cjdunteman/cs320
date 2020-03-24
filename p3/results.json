@@ -1,0 +1,69 @@
+{
+  "score": 57.0,
+  "tests": [
+    {
+      "test": "has_pages",
+      "points": 9,
+      "possible": 10,
+      "log": [
+        "========================================",
+        "TEST has_pages (10)",
+        "page missing h1 title: browse.html",
+        ""
+      ]
+    },
+    {
+      "test": "has_links",
+      "points": 0,
+      "possible": 6,
+      "log": [
+        "========================================",
+        "TEST has_links (6)",
+        "no hyperlink to browse.html found on home page",
+        "no hyperlink to api.html found on home page",
+        "no hyperlink to donate.html found on home page",
+        ""
+      ]
+    },
+    {
+      "test": "browse",
+      "points": 20,
+      "possible": 20
+    },
+    {
+      "test": "ab_test",
+      "points": 0,
+      "possible": 30,
+      "log": [
+        "========================================",
+        "TEST ab_test (30)",
+        "expected exactly one link to donate, but found []",
+        "expected exactly one link to donate, but found []",
+        "expected exactly one link to donate, but found []",
+        "expected exactly one link to donate, but found []",
+        "expected exactly one link to donate, but found []",
+        "expected exactly one link to donate, but found []",
+        ""
+      ]
+    },
+    {
+      "test": "api_examples",
+      "points": 14,
+      "possible": 20,
+      "log": [
+        "========================================",
+        "TEST api_examples (20)",
+        "at least one API example should return a list of dicts (one per data row)",
+        ""
+      ]
+    },
+    {
+      "test": "email",
+      "points": 14,
+      "possible": 14
+    }
+  ],
+  "lint": [],
+  "date": "03/14/2020",
+  "latency": 0.7746198177337646
+}
