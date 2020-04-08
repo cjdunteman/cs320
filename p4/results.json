@@ -1,0 +1,98 @@
+{
+  "score": 70.0,
+  "tests": [
+    {
+      "test": "small_samp",
+      "points": 10,
+      "possible": 10
+    },
+    {
+      "test": "big_samp",
+      "points": 10,
+      "possible": 10
+    },
+    {
+      "test": "small_sort",
+      "points": 10,
+      "possible": 10
+    },
+    {
+      "test": "big_sort",
+      "points": 10,
+      "possible": 10
+    },
+    {
+      "test": "small_country",
+      "points": 0,
+      "possible": 10,
+      "log": [
+        "========================================",
+        "TEST small_country (10 points possible)",
+        "RUN: python3 main.py country small_country.zip small_country_output.zip",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 105, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 329, in small_country",
+        "    run(\"country\", zname, zout)",
+        "  File \"tester.py\", line 251, in run",
+        "    assert exit_code == 0",
+        "AssertionError",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "big_country",
+      "points": 0,
+      "possible": 10,
+      "log": [
+        "========================================",
+        "TEST big_country (10 points possible)",
+        "RUN: python3 main.py country sorted.zip sorted_output.zip",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 105, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 341, in big_country",
+        "    run(\"country\", zname, zout)",
+        "  File \"tester.py\", line 251, in run",
+        "    assert exit_code == 0",
+        "AssertionError",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "geo",
+      "points": 20,
+      "possible": 20
+    },
+    {
+      "test": "geohour",
+      "points": 10,
+      "possible": 10
+    },
+    {
+      "test": "video",
+      "points": 0,
+      "possible": 10,
+      "log": [
+        "========================================",
+        "TEST video (10 points possible)",
+        "RUN: python3 main.py video countries.zip test-vid.html",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 105, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 405, in video",
+        "    run(\"video\", zname, vid_html)",
+        "  File \"tester.py\", line 251, in run",
+        "    assert exit_code == 0",
+        "AssertionError",
+        "",
+        ""
+      ]
+    }
+  ],
+  "lint": [],
+  "date": "04/02/2020",
+  "latency": 19.141884326934814
+}
