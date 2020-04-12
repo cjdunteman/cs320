@@ -1,0 +1,91 @@
+{
+  "score": 26.0,
+  "tests": [
+    {
+      "test": "conn_cleanup",
+      "points": 6,
+      "possible": 10,
+      "log": [
+        "========================================",
+        "TEST conn_cleanup (10 points possible)",
+        "c1.close() didn't close underlying db",
+        "underlying db not closed after context manager exit",
+        ""
+      ]
+    },
+    {
+      "test": "list_images",
+      "points": 5,
+      "possible": 5
+    },
+    {
+      "test": "image_year",
+      "points": 5,
+      "possible": 5
+    },
+    {
+      "test": "image_name",
+      "points": 5,
+      "possible": 5
+    },
+    {
+      "test": "image_load",
+      "points": 5,
+      "possible": 5
+    },
+    {
+      "test": "lat_regression",
+      "points": 0,
+      "possible": 20,
+      "log": [
+        "========================================",
+        "TEST lat_regression (20 points possible)",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 128, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 340, in lat_regression",
+        "    slope, intercept = c.lat_regression(usage_code, ax=ax)",
+        "TypeError: 'float' object is not iterable",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "year_regression",
+      "points": 0,
+      "possible": 25,
+      "log": [
+        "========================================",
+        "TEST year_regression (25 points possible)",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 128, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 406, in year_regression",
+        "    slope, intercept = c.year_regression(params['city'], params['codes'], ax)",
+        "AttributeError: 'Connection' object has no attribute 'year_regression'",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "animate",
+      "points": 0,
+      "possible": 25,
+      "log": [
+        "========================================",
+        "TEST animate (25 points possible)",
+        "Traceback (most recent call last):",
+        "  File \"tester.py\", line 128, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"tester.py\", line 467, in animate",
+        "    html = c.animate(city)",
+        "AttributeError: 'Connection' object has no attribute 'animate'",
+        "",
+        ""
+      ]
+    }
+  ],
+  "lint": [],
+  "date": "04/12/2020",
+  "latency": 4.940002679824829
+}
