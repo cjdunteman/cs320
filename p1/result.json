@@ -103,7 +103,7 @@
     }
   ],
   "lint": [
-    "cell: 10, line: 15 - Too broad exception clause. You should try catching specific exceptions"
+    "cell: 11, line: 15 - Too broad exception clause. You should try catching specific exceptions"
   ],
-  "date": "02/18/2020"
+  "date": "04/12/2020"
 }
