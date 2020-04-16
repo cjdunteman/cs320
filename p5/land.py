@@ -1,3 +1,6 @@
+# project: p5
+# submitter: cdunteman
+# partner: none
 import zipfile
 import io
 from zipfile import ZipFile
